@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="340dp"
+        android:layout_height="346dp"
+        android:alpha="0.3"
+        android:contentDescription="background image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/timer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632" />
+
+    <include
+        layout="@layout/nav_bar" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/home_toolbar"
+        android:layout_width="410dp"
+        android:layout_height="66dp"
+        android:background="#1C4169"
+        android:title="Home"
+        android:titleTextColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <EditText
+        android:id="@+id/timerInput"
+        android:layout_width="288dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="132dp"
+        android:contentDescription="Timer input for hours, minutes, and seconds"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="hh:mm:ss"
+        android:importantForAccessibility="yes"
+        android:inputType="none"
+        android:maxLength="8"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timerDisplay"
+        android:layout_width="319dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="308dp"
+        android:background="#26C6DA"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="97dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="400dp"
+        android:text="Stop"
+        android:backgroundTint="#2C3E50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="97dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="400dp"
+        android:text="Start"
+        android:backgroundTint="#2C3E50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="98dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="#2C3E50"
+        android:text="Reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="134dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="FlowMode"
+        android:fontFamily="@font/nunito_regular"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Pick Your Pause"
+        android:textSize="30dp"
+        android:fontFamily="@font/nunito_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
