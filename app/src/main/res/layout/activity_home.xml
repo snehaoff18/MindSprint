@@ -63,9 +63,9 @@
         android:id="@+id/calendarView"
         android:layout_width="389dp"
         android:layout_height="298dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="240dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -91,19 +91,20 @@
         android:textColor="#ffffff"
         android:textSize="17dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.677"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="326dp"
-        android:layout_height="133dp"
-        android:layout_marginTop="664dp"
+        android:layout_width="369dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="556dp"
         android:fontFamily="@font/nunito_regular"
         android:text="Set. Work. Succeed."
         android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintHorizontal_bias="0.619"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

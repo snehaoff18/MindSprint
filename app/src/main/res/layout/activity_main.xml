@@ -40,13 +40,14 @@
         android:id="@+id/button"
         android:layout_width="190dp"
         android:layout_height="74dp"
-        android:layout_marginStart="112dp"
+        android:layout_marginStart="108dp"
         android:layout_marginTop="504dp"
-        android:text="START"
         android:backgroundTint="#365EA3"
+        android:text="START"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
